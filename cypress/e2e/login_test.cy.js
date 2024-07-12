@@ -1,4 +1,3 @@
-//import LoginPage from '../support/Page Objects/LoginPage';
 import logindatatest from '../fixtures/logindatatest.json'
 
 describe('Scenario 1- Successfully login when the user puts the email and password correctly', () => { 
