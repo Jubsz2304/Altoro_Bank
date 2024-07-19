@@ -17,14 +17,14 @@ describe('Scenario - Successfully transfer between accounts ', () => {
           console.log($el)
           cy.get('#toAccount').select('4539082039396288')
           cy.get('[id=transferAmount]').type('1200')
-          cy.screenshot('before_click')
+          cy.screenshot('transfer_test_screenshots/transfer_before_click.png')
         })
       })
 
       it('THEN the transfer is made', () => {
         cy.get('[id=transfer]').click()
         cy.get('[id=_ctl0__ctl0_Content_Main_postResp]').contains('transferred from Account 800002 into Account 4539082039396288')
-        cy.screenshot('after_click')
+        cy.screenshot('transfer_test_screenshots/transfer_after_click.png')
       })
     })
   })
