@@ -1,6 +1,6 @@
 import logindatatest from '../fixtures/logindatatest.json'
 
-describe('Scenario 1- Successfully login when the user puts the email and password correctly', () => { 
+describe('Scenario 1- Successfully login when the user puts the email and password correctly', () => {
   beforeEach(() => {
     cy.visit('http://demo.testfire.net/login.jsp')
   })
