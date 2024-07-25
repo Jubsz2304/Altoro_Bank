@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1721934446954' stop='1721934454609'>
+    <name>Scenario - Successfully account history GIVEN the user are on the accounts screen WHEN he selects view accounts details</name>
+    <title>Scenario - Successfully account history GIVEN the user are on the accounts screen WHEN he selects view accounts details</title>
+    <test-cases>
+        <test-case start='1721934446955' status='passed' stop='1721934454608'>
+            <name>THEN account history is showed</name>
+            <title>THEN account history is showed</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

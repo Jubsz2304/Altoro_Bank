@@ -26,3 +26,31 @@
 
 // cypress/support/commands.js
 
+// cypress/support/commands.js
+
+const fs = require('fs-extra');
+const path = require('path');
+
+Cypress.Commands.add('checkAndClearAllureResults', (maxFiles = 10) => {
+  const allureResultsDir = path.join(__dirname, '..', '..', 'allure-results');
+
+  cy.task('checkAndClearAllureResults', { allureResultsDir, maxFiles });
+});
+
+module.exports = (on, config) => {
+  on('task', {
+    checkAndClearAllureResults({ allureResultsDir, maxFiles }) {
+      if (fs.existsSync(allureResultsDir)) {
+        const files = fs.readdirSync(allureResultsDir);
+        if (files.length >= maxFiles) {
+          files.forEach(file => {
+            fs.removeSync(path.join(allureResultsDir, file));
+          });
+        }
+      } else {
+        fs.mkdirSync(allureResultsDir);
+      }
+      return null;
+    }
+  });
+};
