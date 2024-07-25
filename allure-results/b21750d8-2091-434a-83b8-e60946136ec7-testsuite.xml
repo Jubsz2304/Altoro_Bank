@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1721934430187' stop='1721934436641'>
+    <name>Scenario - Successfully login GIVEN user is on the login screen WHEN he enters his valid credentials AND clicks on "Entrar" button</name>
+    <title>Scenario - Successfully login GIVEN user is on the login screen WHEN he enters his valid credentials AND clicks on "Entrar" button</title>
+    <test-cases>
+        <test-case start='1721934430187' status='passed' stop='1721934436641'>
+            <name>THEN he must be directed to the Main page</name>
+            <title>THEN he must be directed to the Main page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

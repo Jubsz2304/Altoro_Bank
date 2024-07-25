@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1721934438647' stop='1721934444959'>
+    <name>Scenario - Successfully transfer between accounts  GIVEN the user are on the transfer screen WHEN he selects the deposit account and type the value</name>
+    <title>Scenario - Successfully transfer between accounts  GIVEN the user are on the transfer screen WHEN he selects the deposit account and type the value</title>
+    <test-cases>
+        <test-case start='1721934438648' status='passed' stop='1721934444959'>
+            <name>THEN the transfer is made</name>
+            <title>THEN the transfer is made</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
